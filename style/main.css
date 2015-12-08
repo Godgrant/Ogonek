@@ -42,15 +42,23 @@ a:visited {color: #3a00a3;}
 
 .container {
 	position: relative;
-	margin: 0 auto;
-	padding: 0;
-	width: 980px;
+	margin: 0;
+	padding: 0 20px;
+	width: auto;
+	min-width: 980px;
 }
 
 header {
 	margin: 0;
 	padding: 20px 0 0;
 	background-color: #006ba3;
+}
+
+.branding {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 980px;
 }
 
 .site-logo {
@@ -132,9 +140,7 @@ nav {
 .area {position: relative;}
 
 .area-left {
-	float: left;
-	margin-bottom: 20px;
-	width: 640px;
+	margin: 0 360px 20px 0;
 }
 
 .area-title {position: relative;}
@@ -174,7 +180,7 @@ nav {
 	position: relative;
 	clear: both;
 	margin-bottom: 10px;
-	padding: 10px;
+	padding: 10px 15px 0 10px;
 	height: 160px;
 	border: 2px dashed #efefef;
 }
@@ -197,7 +203,6 @@ nav {
 
 .news {
 	position: relative;
-	width: 446px;
 	height: 100px;
 	overflow: hidden;
 }
@@ -207,10 +212,10 @@ nav {
 	bottom: 0;
 	left: 0;
 	content: '';
-	width: 446px;
+	width: 100%;
 	height: 30px;
 	background: linear-gradient(rgba(255,255,255, 0), rgba(255,255,255, .9) 100%);
-	cursor: text;
+	cursor: default;
 }
 
 .feed li h3 {margin: 5px 0;}
@@ -235,7 +240,9 @@ nav {
 }
 
 .area-right {
-	float: right;
+	position: absolute;
+	top: 20px;
+	right: 20px;
 	width: 300px;
 }
 
@@ -276,7 +283,10 @@ nav {
 	border: none;
 }
 
-.gsInformer {border: 1px solid #efefef !important;}
+.gsInformer {
+	border: 1px solid #efefef !important;
+	padding-top: 10px;
+}
 
 .gsInformer .secondaryWrap,
 .gsInformer .gsAddInfo2,
@@ -284,6 +294,7 @@ nav {
 .gsInformer #colsData {background-color: #fff !important;}
 
 
+.gsInformer .gsAddInfo,
 .gsInformer .gsAddInfo2,
 .gsInformer #colsDays {
 	color: #000 !important;
@@ -301,7 +312,7 @@ nav {
 
 .gsLinks {
 	position: relative !important;
-	top: 0 !important;
+	top: 10px !important;
 	padding: 5px 5px 7px !important;
 	height: 13px !important;
 	background-color: #efefef !important;
